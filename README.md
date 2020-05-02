@@ -1,4 +1,6 @@
-# Step by step setup for Mask_RCNN adpated to wally
+# Step by step setup for Mask_RCNN adapted to wally
+
+![](https://1.bp.blogspot.com/-U51vk2wxcGk/VW1u_vKroOI/AAAAAAAAFUs/Wjwsuz69qf4/s1600/wallyj.jpg)
 
 # Run ballon example
 ## Steps to do in command line
@@ -87,6 +89,10 @@ python3 wally.py train --dataset=../../datasets/wally --weights=mask_rcnn_coco.h
 ### Check the model with inspect_wally_model.ipynb
 --> Download some Wally pics from Web
 --> Test predicitions of the model with them in the last part of the notebook 'Test with unseen pictures'
+
+
+
+******************* original readme from matterport **************************
 
 # Mask R-CNN for Object Detection and Segmentation
 
