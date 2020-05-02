@@ -1,5 +1,6 @@
-# Step by step setup for Mask_RCNN
+# Step by step setup for Mask_RCNN adpated to wally
 
+# Run ballon example
 ## Steps to do in command line
 
 ### Clone project
@@ -63,7 +64,7 @@ python3 balloon.py train --dataset=../../datasets/balloon --weights=mask_rcnn_co
 see: https://github.com/matterport/Mask_RCNN/issues/796
 
 
-## Wally
+# Train with wally
 ### Make a copy 
 Of folder 'samples/ballon' and rename it to 'wally'
 
