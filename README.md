@@ -9,15 +9,16 @@
 git clone https://github.com/matterport/Mask_RCNN.git
 
 ### Create new conda environment with
-conda create -n mask_rcnn 
+conda create -n mask_rcnn; 
 conda activate mask_rcnn
 
 ### Install jupyter (and jupyter lab) and eventually other packages
-conda install jupyter
+conda install jupyter;
 conda install -c conda-forge jupyterlab
 
 ### Install dependencies
 Navigate inside the project folder and run:
+
 while read requirement; do conda install --yes $requirement; done < requirements.txt
 
 --> see: https://gist.github.com/luiscape/19d2d73a8c7b59411a2fb73a697f5ed4 
@@ -38,6 +39,7 @@ Unzip and store it to (create folder 'datasets' first):
 
 ### Open the jupyter notebook for the balloon example
 cd /home/luca/Documents/switchDrive/Private/Bildung/03_hslu/02_semester_03/W.MSCIDS_DLV03.F2001/group_project/Mask_RCNN/samples/balloon
+
 jupyter lab
 
 
@@ -83,7 +85,8 @@ Also store the annotations file as json in the respective folder, named 'via_reg
 ### Train: Start training from command line
 (make sure to activate the right environment first: conda activate mask_rcnn)
 
-cd /home/luca/Documents/switchDrive/Private/Bildung/03_hslu/02_semester_03/W.MSCIDS_DLV03.F2001/group_project/Mask_RCNN/samples/wally
+cd samples/wally;
+
 python3 wally.py train --dataset=../../datasets/wally --weights=mask_rcnn_coco.h5
 
 ### Check the model with inspect_wally_model.ipynb
